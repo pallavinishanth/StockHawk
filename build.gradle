@@ -2,6 +2,7 @@ apply plugin: 'com.github.ben-manes.versions'
 
 buildscript {
     repositories {
+        maven { url "https://jitpack.io" }
         jcenter()
     }
     dependencies {
