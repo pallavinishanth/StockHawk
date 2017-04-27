@@ -34,5 +34,6 @@
     <string name="toast_invalid_stock" translatable="true">Invalid Stock!!</string>
 
     <string name="edit_text_input">ABCDEFGHIJKLMNOPQRSTUVWXYZ</string>
+    <string name="widget_title">STOCKS</string>
 
 </resources>
