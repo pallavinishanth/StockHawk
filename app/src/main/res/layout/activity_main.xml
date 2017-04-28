@@ -17,7 +17,8 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:paddingLeft="@dimen/activity_horizontal_margin"
-            android:paddingRight="@dimen/activity_horizontal_margin" />
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:contentDescription="@string/Stocks_List"/>
 
     </android.support.v4.widget.SwipeRefreshLayout>
 
@@ -33,7 +34,8 @@
         app:borderWidth="0dp"
         app:elevation="6dp"
         app:fabSize="normal"
-        app:pressedTranslationZ="12dp" />
+        app:pressedTranslationZ="12dp"
+        android:contentDescription="@string/add_stock"/>
 
     <TextView
         android:id="@+id/error"
