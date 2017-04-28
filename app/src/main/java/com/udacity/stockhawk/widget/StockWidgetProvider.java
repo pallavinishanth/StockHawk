@@ -33,14 +33,23 @@ public class StockWidgetProvider extends AppWidgetProvider {
             RemoteViews remoteViews = new
                     RemoteViews(context.getPackageName(), R.layout.widget_layout);
 
-            // set intent for widget service that will create the views
+            // Set up the intent that starts the StackViewService, which will
+            // provide the views for this collection.
             Intent serviceIntent = new Intent(context, StockWidgetRemoteViewsService.class);
+            // Add the app widget ID to the intent extras.
             serviceIntent.putExtra(AppWidgetManager.EXTRA_APPWIDGET_ID, appWidgetIds[i]);
 
             // embed extras so they don't get ignored
             serviceIntent.setData(Uri.parse(serviceIntent.toUri(Intent.URI_INTENT_SCHEME)));
 
+            // Set up the RemoteViews object to use a RemoteViews adapter.
+            // This adapter connects
+            // to a RemoteViewsService  through the specified intent.
+            // This is how you populate the data.
             remoteViews.setRemoteAdapter(R.id.widget_list, serviceIntent);
+            // The empty view is displayed when the collection has no items.
+            // It should be in the same layout used to instantiate the RemoteViews
+            // object above.
             remoteViews.setEmptyView(R.id.widget_list, R.id.empty_list);
 
             // set intent for item click (opens main activity)

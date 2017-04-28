@@ -9,6 +9,7 @@ import android.widget.RemoteViewsService;
 
 import com.udacity.stockhawk.R;
 import com.udacity.stockhawk.data.Contract;
+import com.udacity.stockhawk.ui.StockChartActivity;
 
 
 /**
@@ -86,16 +87,13 @@ public class StockWidgetRemoteViewsService extends RemoteViewsService {
                     }else{
 
                         views.setInt(R.id.change, "setBackgroundResource", R.drawable.percent_change_pill_red);
-                        views.setTextViewText(R.id.change, "-"+percent_change+"%");
+                        views.setTextViewText(R.id.change, percent_change+"%");
                     }
-                }
 
-                final Intent fillInIntent = new Intent();
-                fillInIntent.putExtra(Contract.Quote.COLUMN_SYMBOL,
-                        data.getString(data.getColumnIndex(Contract.Quote.COLUMN_SYMBOL)));
-                fillInIntent.putExtra(Contract.Quote.COLUMN_PRICE,
-                        data.getString(data.getColumnIndex(Contract.Quote.COLUMN_PRICE)));
-                views.setOnClickFillInIntent(R.id.widget_list, fillInIntent);
+                    final Intent fillInIntent = new Intent();
+                    fillInIntent.putExtra(StockChartActivity.EXTRA_SYMBOL, symbol);
+                    views.setOnClickFillInIntent(R.id.list_item, fillInIntent);
+                }
 
                 return views;
             }
