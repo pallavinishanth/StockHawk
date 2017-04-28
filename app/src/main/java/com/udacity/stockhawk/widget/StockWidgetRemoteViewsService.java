@@ -72,10 +72,22 @@ public class StockWidgetRemoteViewsService extends RemoteViewsService {
                     String price = data.getString(data.getColumnIndex(Contract.Quote.COLUMN_PRICE));
                     String percent_change =
                             data.getString(data.getColumnIndex(Contract.Quote.COLUMN_PERCENTAGE_CHANGE));
+                    String abs_change =
+                            data.getString(data.getColumnIndex(Contract.Quote.COLUMN_ABSOLUTE_CHANGE));
+
 
                     views.setTextViewText(R.id.symbol, symbol);
                     views.setTextViewText(R.id.price, "$"+price);
-                    views.setTextViewText(R.id.change, percent_change+"%");
+
+                    if(Float.parseFloat(abs_change) > 0){
+                        views.setInt(R.id.change, "setBackgroundResource", R.drawable.percent_change_pill_green);
+                        views.setTextViewText(R.id.change, "+"+percent_change+"%");
+
+                    }else{
+
+                        views.setInt(R.id.change, "setBackgroundResource", R.drawable.percent_change_pill_red);
+                        views.setTextViewText(R.id.change, "-"+percent_change+"%");
+                    }
                 }
 
                 final Intent fillInIntent = new Intent();
