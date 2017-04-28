@@ -59,7 +59,6 @@ public class StockWidgetProvider extends AppWidgetProvider {
 
             PendingIntent viewPendingIntent = PendingIntent.getActivity(context, 0, viewIntent, 0);
             remoteViews.setPendingIntentTemplate(R.id.widget_list, viewPendingIntent);
-            //remoteViews.setOnClickPendingIntent(R.id.widget_list, viewPendingIntent);
 
             // update widget
             appWidgetManager.updateAppWidget(appWidgetIds[i], remoteViews);
