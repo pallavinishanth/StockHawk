@@ -31,5 +31,17 @@
 
     <string name="toast_stock_added_no_connectivity">Symbol %s added. Will refresh when network available.</string>
     <string name="toast_no_connectivity">Will refresh when network available.</string>
+    <string name="toast_invalid_stock" translatable="true">Invalid Stock!!</string>
+
+    <string name="edit_text_input">ABCDEFGHIJKLMNOPQRSTUVWXYZ</string>
+    <string name="widget_title">STOCKS</string>
+
+    <!-- Content Description -->
+    <string name="Stocks_List">Stocks List</string>
+    <string name="add_stock">Add Stock to the list</string>
+    <string name="stock_chart">Stock Detail Chart</string>
+    <string name="stock_name" translatable="false">Google</string>
+    <string name="stock_price" >Stock Price</string>
+    <string name="stock_change" >Stock Change</string>
 
 </resources>
