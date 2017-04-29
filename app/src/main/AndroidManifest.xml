@@ -24,7 +24,8 @@
         </activity>
 
         <activity android:name=".ui.StockChartActivity"
-            android:parentActivityName=".ui.MainActivity"/>
+            android:parentActivityName=".ui.MainActivity"
+            android:exported="true"/>
         <service
             android:name=".sync.QuoteIntentService"
             android:exported="false" />
