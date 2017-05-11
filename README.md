@@ -1,6 +1,6 @@
 # Stock Hawk
 
-StockHawk is the third project of Udacity's Android Developer Nanodegree. The app currently finds stock prices from the internet and allows users to add stocks to track.
+StockHawk is developed as part of Udacity's Android Developer Nanodegree course. The app currently finds stock prices from the internet and allows users to add stocks to track.
 
 The purpose of this project was to productionize it, taking it from a functional state to a production-ready state which involved finding and handling error cases, adding accessibility features, allowing for localization, adding a widget, and adding a library.
 
