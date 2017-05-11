@@ -39,3 +39,13 @@ Support Right-to-Left Layouts.
 Accessibility (A11y Testing with Talkback) and Localization (L10n).
 
 Yahoofinance API
+
+Install
+
+To install the app on your device, there are three ways possible:
+
+1.) Download the .apk file from the build directory and copy it on to your Android device and Install it.
+
+2.) Import the project into the Android Studio IDE and hit the play button to install the app via ADB.
+
+3.) Follow the commands to install the app via ADB using Command Prompt.
