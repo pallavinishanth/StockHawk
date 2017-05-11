@@ -17,3 +17,16 @@ Made the app accessible to sight-impaired users.
 Allowed the app to be localized for distribution in other countries.
 
 Handled error cases in Android.
+
+The features and libraries used in Stock Hawk are listed below :
+
+GridLayout implementation.
+RecyclerView.
+Floating Action Button.
+ButterKnife.
+MPAndroidChart for stock detail graph.
+Collection Widget.
+Toast and SnackBar to show short messages.
+Support Right-to-Left Layouts .
+Accessibility (A11y Testing with Talkback) and Localization (L10n).
+Yahoofinance API
