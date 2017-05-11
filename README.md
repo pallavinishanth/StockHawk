@@ -1,11 +1,14 @@
 # Stock Hawk
 
-This is the starter code for project 3 in Udacity's [Android Developer Nanodegree](https://www.udacity.com/course/android-developer-nanodegree-by-google--nd801). 
+StockHawk is the third project of Udacity's Android Developer Nanodegree. The app currently finds stock prices from the internet and allows users to add stocks to track.
 
-Check out Udacity's [Advanced Android App Development](https://www.udacity.com/course/advanced-android-app-development--ud855) course to get the skills you'll need to complete this project!
+The purpose of this project was to productionize it, taking it from a functional state to a production-ready state which involved finding and handling error cases, adding accessibility features, allowing for localization, adding a widget, and adding a library.
 
-If you're a Nanodegree student check your work againt the project [rubric](https://review.udacity.com/#!/rubrics/140/view), then click [here](https://classroom.udacity.com/nanodegrees/nd801/parts/8011345406/project) to submit your project.
+Key Features that I did:
 
-# Contrubuting
-
-Pull requests gratefully accepted.
+Added a widget that displays stock quotes on the home screen.
+Added a library to show more details of stock using chart to track their prices over time.
+Diagnosed existing issues with the app.
+Made the app accessible to sight-impaired users.
+Allowed the app to be localized for distribution in other countries.
+Handled error cases in Android.
