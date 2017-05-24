@@ -1,10 +1,20 @@
-# Stock Hawk
+# StockHawk
 
 StockHawk is developed as part of Udacity's Android Developer Nanodegree course. The app currently finds stock prices from the internet and allows users to add stocks to track.
 
 The purpose of this project was to productionize it, taking it from a functional state to a production-ready state which involved finding and handling error cases, adding accessibility features, allowing for localization, adding a widget, and adding a library.
 
-Key Features that I did:
+### Installation
+
+To install the app on your device, there are three ways possible:
+
+1.) Download the .apk file from the build directory and copy it on to your Android device and Install it.
+
+2.) Import the project into the Android Studio IDE and hit the play button to install the app via ADB.
+
+3.) Follow the commands to install the app via ADB using Command Prompt.
+
+### Key Features
 
 Added a widget that displays stock quotes on the home screen.
 
@@ -18,34 +28,14 @@ Allowed the app to be localized for distribution in other countries.
 
 Handled error cases in Android.
 
-The features and libraries used in Stock Hawk are listed below :
+### Plugins
 
-GridLayout implementation.
+ButterKnife
 
-RecyclerView.
+MPAndroidChart for stock detail graph
 
-Floating Action Button.
+Toast and SnackBar to show short messages
 
-ButterKnife.
-
-MPAndroidChart for stock detail graph.
-
-Collection Widget.
-
-Toast and SnackBar to show short messages.
-
-Support Right-to-Left Layouts.
-
-Accessibility (A11y Testing with Talkback) and Localization (L10n).
+Accessibility (A11y Testing with Talkback) and Localization (L10n)
 
 Yahoofinance API
-
-Install
-
-To install the app on your device, there are three ways possible:
-
-1.) Download the .apk file from the build directory and copy it on to your Android device and Install it.
-
-2.) Import the project into the Android Studio IDE and hit the play button to install the app via ADB.
-
-3.) Follow the commands to install the app via ADB using Command Prompt.
