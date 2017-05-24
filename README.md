@@ -32,9 +32,9 @@ Handled error cases in Android.
 
 ButterKnife
 
-MPAndroidChart for stock detail graph
+MPAndroidChart (For stock detail graph)
 
-Toast and SnackBar to show short messages
+Toast and SnackBar (To show short messages)
 
 Accessibility (A11y Testing with Talkback) and Localization (L10n)
 
